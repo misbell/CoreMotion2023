@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import CoreMotion
+
+
 
 struct ContentView: View {
+    @StateObject private var viewModel = ContentViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -22,3 +27,22 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+final class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+ 
+    var activityManager: CMMotionActivityManager?
+    /// Provides to create an instance of the CMPedometer.
+    var pedometer: CMPedometer?
+    
+    func checkIfMotionServicesAvailableOnThisDevice() {
+        if CMMotionActivityManager.isActivityAvailable()  {
+            
+        }
+       
+    }
+}
+    
+import CoreMotion
+/// Provides to create an instance of the CMMotionActivityManager.
+
