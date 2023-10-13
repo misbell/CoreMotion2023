@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4C821E2AD9941000CD2E90 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C821D2AD9941000CD2E90 /* MotionManager.swift */; };
+		1B4C82202AD9941E00CD2E90 /* MotionActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C821F2AD9941E00CD2E90 /* MotionActivityManager.swift */; };
 		CD2937A72AD878B00079C309 /* Pedometer_2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2937A62AD878B00079C309 /* Pedometer_2023App.swift */; };
 		CD2937A92AD878B00079C309 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2937A82AD878B00079C309 /* ContentView.swift */; };
 		CD2937AB2AD878B10079C309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2937AA2AD878B10079C309 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B4C821D2AD9941000CD2E90 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		1B4C821F2AD9941E00CD2E90 /* MotionActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityManager.swift; sourceTree = "<group>"; };
 		CD2937A32AD878B00079C309 /* Pedometer 2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pedometer 2023.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2937A62AD878B00079C309 /* Pedometer_2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedometer_2023App.swift; sourceTree = "<group>"; };
 		CD2937A82AD878B00079C309 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4C821C2AD9940000CD2E90 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				1B4C821D2AD9941000CD2E90 /* MotionManager.swift */,
+				1B4C821F2AD9941E00CD2E90 /* MotionActivityManager.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
 		CD29379A2AD878B00079C309 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +64,7 @@
 		CD2937A52AD878B00079C309 /* Pedometer 2023 */ = {
 			isa = PBXGroup;
 			children = (
+				1B4C821C2AD9940000CD2E90 /* Sensors */,
 				CD2937A62AD878B00079C309 /* Pedometer_2023App.swift */,
 				CD2937A82AD878B00079C309 /* ContentView.swift */,
 				CD2937AA2AD878B10079C309 /* Assets.xcassets */,
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4C82202AD9941E00CD2E90 /* MotionActivityManager.swift in Sources */,
 				CD2937A92AD878B00079C309 /* ContentView.swift in Sources */,
+				1B4C821E2AD9941000CD2E90 /* MotionManager.swift in Sources */,
 				CD2937A72AD878B00079C309 /* Pedometer_2023App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
